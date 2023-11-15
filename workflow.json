@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "9cc94005c8fae0fc0dd266c577b0ed3d",
   "isDeleted": false,
-  "rev": "11-29f8ac483027f45449f74c83db008bcd",
+  "rev": "30-ebd65be30d6a92d9d542d9ff2a5df831",
   "description": "Converts a list of peptides into a list of kinases.",
   "name": "UKA_MTvC_app",
   "createdBy": "dschuller",
@@ -17,7 +17,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-11-15T09:56:39.525827Z"
+    "value": "2023-11-15T11:58:26.089884Z"
   },
   "urls": [
     {
@@ -84,26 +84,26 @@
     },
     {
       "kind": "Link",
-      "id": "dac5aa6c-9111-473e-8551-240a1231b089",
-      "inputId": "5d3608b1-96de-40b2-ab8f-e3f8ce89d8ad-i-0",
+      "id": "d72552f6-711a-41a1-a0e7-4bd5bdea4e9a",
+      "inputId": "611c42ca-03f4-4076-bab3-3fdea67454b7-i-0",
       "outputId": "6514d203-6472-4f6c-8a59-bc5d826e95d6-o-0"
     },
     {
       "kind": "Link",
-      "id": "f301ed08-3216-4b1b-b7ad-0db67a96f218",
+      "id": "6bc6341b-0fa8-42fe-b024-70c431c0ae2f",
       "inputId": "a13ba99f-4697-4e80-9cc1-16de6f1f35ed-i-0",
-      "outputId": "94aa0e70-de9b-4b31-8311-25e855e9effb-o-0"
+      "outputId": "700c68c5-2000-49d5-9c27-cb075bf61929-o-0"
     },
     {
       "kind": "Link",
-      "id": "bf9c3f64-c5fc-4e91-a703-f6cfa5f18ff2",
-      "inputId": "94aa0e70-de9b-4b31-8311-25e855e9effb-i-0",
-      "outputId": "db5b66dd-ef04-411e-ae83-3e54ebd092ae-o-0"
+      "id": "8b0209da-b5b5-4ccf-9e5d-a110b44333bf",
+      "inputId": "700c68c5-2000-49d5-9c27-cb075bf61929-i-0",
+      "outputId": "4c79038d-5255-48cd-b79b-3dd1b24c34c5-o-0"
     },
     {
       "kind": "Link",
-      "id": "041f7926-68b2-496e-bb73-f70f6260572f",
-      "inputId": "2e4b3fc4-b5a3-49ec-b361-e92ee08e8889-i-0",
+      "id": "8420d54e-5abb-4d91-a52e-2fb2a0f7cc11",
+      "inputId": "b01d5793-3c97-4cb2-b95d-9f87e4aadc48-i-0",
       "outputId": "6514d203-6472-4f6c-8a59-bc5d826e95d6-o-0"
     }
   ],
@@ -540,7 +540,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "4bd352f5-65d1-42d2-8213-025d0e7701c6"
+        "id": "5cc6f7a4-6061-4a8e-8048-bee66da588d7"
       },
       "parentDataStepId": ""
     },
@@ -853,7 +853,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "0b729832-0f4c-4cf7-8c47-aea714ff0ccb"
+        "id": "473a92dd-1677-452d-a0b1-a3fa030d09ad"
       },
       "parentDataStepId": ""
     },
@@ -1166,7 +1166,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "146c6e62-1c44-42b9-a8eb-4c119031b7d6"
+        "id": "5bf978f3-ef87-48ed-a815-e486e7c8a9e1"
       },
       "parentDataStepId": ""
     },
@@ -1462,15 +1462,15 @@
                 {
                   "kind": "FilterExpr",
                   "filterOp": "notequals",
-                  "stringValue": "",
+                  "stringValue": "Control",
                   "factor": {
                     "kind": "Factor",
-                    "name": "ds1.Kinase Uniprot ID",
+                    "name": "Group",
                     "type": "string"
                   }
                 }
               ],
-              "name": "ds1.Kinase Uniprot ID"
+              "name": "Group !=Control"
             }
           ]
         },
@@ -1680,19 +1680,19 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "23ed96a9-d418-4406-a328-f8f98f098de8"
+        "id": "64ef84da-a93d-4191-98f3-938f1de6b265"
       },
       "parentDataStepId": ""
     },
     {
       "kind": "ExportStep",
-      "id": "5d3608b1-96de-40b2-ab8f-e3f8ce89d8ad",
+      "id": "611c42ca-03f4-4076-bab3-3fdea67454b7",
       "groupId": "",
       "name": "Export",
       "inputs": [
         {
           "kind": "InputPort",
-          "id": "5d3608b1-96de-40b2-ab8f-e3f8ce89d8ad-i-0",
+          "id": "611c42ca-03f4-4076-bab3-3fdea67454b7-i-0",
           "linkType": "relation",
           "name": "data"
         }
@@ -1707,8 +1707,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 624.140541687012,
-          "y": 571.5
+          "x": 625.1405416870119,
+          "y": 557.5
         }
       },
       "state": {
@@ -1724,13 +1724,13 @@
     },
     {
       "kind": "WizardStep",
-      "id": "94aa0e70-de9b-4b31-8311-25e855e9effb",
+      "id": "700c68c5-2000-49d5-9c27-cb075bf61929",
       "groupId": "",
       "name": "Wizard",
       "inputs": [
         {
           "kind": "InputPort",
-          "id": "94aa0e70-de9b-4b31-8311-25e855e9effb-i-0",
+          "id": "700c68c5-2000-49d5-9c27-cb075bf61929-i-0",
           "linkType": "relation",
           "name": "table"
         }
@@ -1738,7 +1738,7 @@
       "outputs": [
         {
           "kind": "OutputPort",
-          "id": "94aa0e70-de9b-4b31-8311-25e855e9effb-o-0",
+          "id": "700c68c5-2000-49d5-9c27-cb075bf61929-o-0",
           "linkType": "relation",
           "name": "table"
         }
@@ -1752,8 +1752,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 628.5389535522461,
-          "y": 33.5
+          "x": 626.9109399414065,
+          "y": 35.5
         }
       },
       "state": {
@@ -1766,16 +1766,16 @@
       "model": {
         "kind": "WizardStepModel",
         "namespace": "UKA_MTvC",
-        "description": "Find kinase activity changes from differential peptide phosphorylation.",
-        "appDesignType": "UKA_MTvC.c06_super_groups_control",
+        "description": "",
+        "appDesignType": "UKA_MTvC.c06_groups_control_pair",
         "factors": [
           {
             "kind": "MappingFactor",
             "name": "Measurement",
             "type": "double",
             "isSingle": true,
-            "description": "Select the factor that defines the values to use in the computation.\n\nExample:\n* log transform of S100\n* log transformed and ComBat Corrected S100\n* VSN transformed S100\n* VSN transformed and ComBat Corrected S100",
-            "factorName": "Quantitation Type",
+            "description": "",
+            "factorName": "Measurement",
             "factors": [
               {
                 "kind": "Factor",
@@ -1790,8 +1790,8 @@
             "name": "Variable",
             "type": "string",
             "isSingle": false,
-            "description": "Select the peptide identifier.\n\nExample:\n* ID",
-            "factorName": "Peptide",
+            "description": "",
+            "factorName": "Variable",
             "factors": [
               {
                 "kind": "Factor",
@@ -1806,8 +1806,8 @@
             "name": "Group",
             "type": "string",
             "isSingle": false,
-            "description": "Select the factor that defines the comparison groups.\n\nExample:\n* Test Condition\n* Treatment off chip",
-            "factorName": "Test Condition",
+            "description": "",
+            "factorName": "Group",
             "factors": [
               {
                 "kind": "Factor",
@@ -1822,8 +1822,8 @@
             "name": "Observation",
             "type": "string",
             "isSingle": false,
-            "description": "Select the factor(s) defining a single value per cell.\n\nExample:\n* Barcode and Row\n* Barcode and Array\n * Sample Name",
-            "factorName": "Single Data Value per Cell",
+            "description": "",
+            "factorName": "Observation",
             "factors": [
               {
                 "kind": "Factor",
@@ -1891,8 +1891,8 @@
             "name": "Measurement",
             "type": "double",
             "isSingle": true,
-            "description": "Select the factor that defines the values to use in the computation.\n\nExample:\n* log transform of S100\n* log transformed and ComBat Corrected S100\n* VSN transformed S100\n* VSN transformed and ComBat Corrected S100",
-            "factorName": "Quantitation Type",
+            "description": "",
+            "factorName": "Measurement",
             "factors": [
               {
                 "kind": "Factor",
@@ -1907,8 +1907,8 @@
             "name": "Variable",
             "type": "string",
             "isSingle": false,
-            "description": "Select the peptide identifier.\n\nExample:\n* ID",
-            "factorName": "Peptide",
+            "description": "",
+            "factorName": "Variable",
             "factors": [
               {
                 "kind": "Factor",
@@ -1923,8 +1923,8 @@
             "name": "Group",
             "type": "string",
             "isSingle": false,
-            "description": "Select the factor that defines the comparison groups.\n\nExample:\n* Test Condition\n* Treatment off chip",
-            "factorName": "Test Condition",
+            "description": "",
+            "factorName": "Group",
             "factors": [
               {
                 "kind": "Factor",
@@ -1939,8 +1939,8 @@
             "name": "Observation",
             "type": "string",
             "isSingle": false,
-            "description": "Select the factor(s) defining a single value per cell.\n\nExample:\n* Barcode and Row\n* Barcode and Array\n * Sample Name",
-            "factorName": "Single Data Value per Cell",
+            "description": "",
+            "factorName": "Observation",
             "factors": [
               {
                 "kind": "Factor",
@@ -2005,13 +2005,13 @@
     },
     {
       "kind": "InStep",
-      "id": "db5b66dd-ef04-411e-ae83-3e54ebd092ae",
+      "id": "4c79038d-5255-48cd-b79b-3dd1b24c34c5",
       "groupId": "",
       "name": "Input",
       "inputs": [
         {
           "kind": "InputPort",
-          "id": "db5b66dd-ef04-411e-ae83-3e54ebd092ae-i-0",
+          "id": "4c79038d-5255-48cd-b79b-3dd1b24c34c5-i-0",
           "linkType": "any",
           "name": "from"
         }
@@ -2019,7 +2019,7 @@
       "outputs": [
         {
           "kind": "OutputPort",
-          "id": "db5b66dd-ef04-411e-ae83-3e54ebd092ae-o-0",
+          "id": "4c79038d-5255-48cd-b79b-3dd1b24c34c5-o-0",
           "linkType": "any",
           "name": "to"
         }
@@ -2033,8 +2033,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 635.5050000000001,
-          "y": -67.5
+          "x": 622.5050000000001,
+          "y": -46.5
         }
       },
       "state": {
@@ -2052,13 +2052,13 @@
     },
     {
       "kind": "OutStep",
-      "id": "2e4b3fc4-b5a3-49ec-b361-e92ee08e8889",
+      "id": "b01d5793-3c97-4cb2-b95d-9f87e4aadc48",
       "groupId": "",
       "name": "Output",
       "inputs": [
         {
           "kind": "InputPort",
-          "id": "2e4b3fc4-b5a3-49ec-b361-e92ee08e8889-i-0",
+          "id": "b01d5793-3c97-4cb2-b95d-9f87e4aadc48-i-0",
           "linkType": "any",
           "name": "from"
         }
@@ -2066,7 +2066,7 @@
       "outputs": [
         {
           "kind": "OutputPort",
-          "id": "2e4b3fc4-b5a3-49ec-b361-e92ee08e8889-o-0",
+          "id": "b01d5793-3c97-4cb2-b95d-9f87e4aadc48-o-0",
           "linkType": "any",
           "name": "to"
         }
@@ -2080,8 +2080,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 766.140541687012,
-          "y": 473.5
+          "x": 775.140541687012,
+          "y": 467.5
         }
       },
       "state": {
@@ -2100,7 +2100,7 @@
   ],
   "offset": {
     "kind": "Point",
-    "x": 229.0,
-    "y": -268.0
+    "x": 227.0,
+    "y": 146.0
   }
 }
