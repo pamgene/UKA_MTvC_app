@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "9cc94005c8fae0fc0dd266c577b0ed3d",
   "isDeleted": false,
-  "rev": "30-ebd65be30d6a92d9d542d9ff2a5df831",
+  "rev": "37-de16257f9ec1aa47f71637da82fb1fa1",
   "description": "Converts a list of peptides into a list of kinases.",
   "name": "UKA_MTvC_app",
   "createdBy": "dschuller",
@@ -17,12 +17,12 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-11-15T11:58:26.089884Z"
+    "value": "2023-11-16T16:10:55.133619Z"
   },
   "urls": [
     {
       "kind": "Url",
-      "uri": "https://github.com/pamgene/UKA_MTvC_app"
+      "uri": "https://github.com/tercen/simple_workflow_tmpl"
     }
   ],
   "tags": [],
@@ -90,20 +90,32 @@
     },
     {
       "kind": "Link",
-      "id": "6bc6341b-0fa8-42fe-b024-70c431c0ae2f",
+      "id": "fe4fe64a-faf2-4b16-bfa2-63e6aee4ab39",
+      "inputId": "28dad2a6-df63-4df1-8989-100ed096f12a-i-0",
+      "outputId": "2ca378e5-1717-4952-ad2d-caec64d253c8-o-0"
+    },
+    {
+      "kind": "Link",
+      "id": "b6828a5d-dc50-4eee-9c5a-4d94bcf3111e",
+      "inputId": "0aa737e9-ae7a-49a6-aa1b-dcd216573529-i-0",
+      "outputId": "28dad2a6-df63-4df1-8989-100ed096f12a-o-0"
+    },
+    {
+      "kind": "Link",
+      "id": "2075ea62-fe4e-4cc5-ad8f-26536adeb0ee",
       "inputId": "a13ba99f-4697-4e80-9cc1-16de6f1f35ed-i-0",
       "outputId": "700c68c5-2000-49d5-9c27-cb075bf61929-o-0"
     },
     {
       "kind": "Link",
-      "id": "8b0209da-b5b5-4ccf-9e5d-a110b44333bf",
+      "id": "a1396c3a-6976-4a95-b107-274686f820b4",
       "inputId": "700c68c5-2000-49d5-9c27-cb075bf61929-i-0",
-      "outputId": "4c79038d-5255-48cd-b79b-3dd1b24c34c5-o-0"
+      "outputId": "7cead796-d30b-47d7-af26-53ed942808e9-o-0"
     },
     {
       "kind": "Link",
-      "id": "8420d54e-5abb-4d91-a52e-2fb2a0f7cc11",
-      "inputId": "b01d5793-3c97-4cb2-b95d-9f87e4aadc48-i-0",
+      "id": "24aa8f5b-b566-4bd6-98a4-b887bb5e8c35",
+      "inputId": "b41d2775-a5ab-4b19-9b65-2f1e3308473e-i-0",
       "outputId": "6514d203-6472-4f6c-8a59-bc5d826e95d6-o-0"
     }
   ],
@@ -420,8 +432,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "UKA operator",
-            "version": "b7ede2f",
-            "operatorId": "4a2c70cabd32e41f0f694c487f925565",
+            "version": "0.0.1",
+            "operatorId": "375b976c71390543dc5c4a15c7b36679",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -540,7 +552,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "5cc6f7a4-6061-4a8e-8048-bee66da588d7"
+        "id": "388a770e-250a-4a97-909b-7446d2e32599"
       },
       "parentDataStepId": ""
     },
@@ -853,7 +865,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "473a92dd-1677-452d-a0b1-a3fa030d09ad"
+        "id": "70e72197-d314-4367-8e95-41fc27512b12"
       },
       "parentDataStepId": ""
     },
@@ -1166,7 +1178,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "5bf978f3-ef87-48ed-a815-e486e7c8a9e1"
+        "id": "075d6a71-0944-4577-b7c1-12fe942fe404"
       },
       "parentDataStepId": ""
     },
@@ -1680,7 +1692,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "64ef84da-a93d-4191-98f3-938f1de6b265"
+        "id": "d9454f67-c50e-4f8f-9898-a1af1d3defa5"
       },
       "parentDataStepId": ""
     },
@@ -2004,14 +2016,336 @@
       }
     },
     {
+      "kind": "DataStep",
+      "id": "28dad2a6-df63-4df1-8989-100ed096f12a",
+      "groupId": "",
+      "name": "Kinase volcano",
+      "inputs": [
+        {
+          "kind": "InputPort",
+          "id": "28dad2a6-df63-4df1-8989-100ed096f12a-i-0",
+          "linkType": "relation",
+          "name": "data"
+        }
+      ],
+      "outputs": [
+        {
+          "kind": "OutputPort",
+          "id": "28dad2a6-df63-4df1-8989-100ed096f12a-o-0",
+          "linkType": "relation",
+          "name": "data"
+        }
+      ],
+      "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+          "kind": "Point",
+          "x": 108.05989074707031,
+          "y": 55.0
+        },
+        "topLeft": {
+          "kind": "Point",
+          "x": 766.140541687012,
+          "y": 300.5
+        }
+      },
+      "state": {
+        "kind": "StepState",
+        "taskId": "",
+        "taskState": {
+          "kind": "InitState"
+        }
+      },
+      "model": {
+        "kind": "Crosstab",
+        "axis": {
+          "kind": "XYAxisList",
+          "rectangleSelections": [
+            {
+              "kind": "Rectangle",
+              "extent": {
+                "kind": "Point",
+                "x": 0.0,
+                "y": 0.0
+              },
+              "topLeft": {
+                "kind": "Point",
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "xyAxis": [
+            {
+              "kind": "XYAxis",
+              "chart": {
+                "kind": "ChartPoint",
+                "name": "",
+                "properties": {
+                  "kind": "Properties",
+                  "properties": [],
+                  "propertyValues": []
+                },
+                "pointSize": 6
+              },
+              "colors": {
+                "kind": "Colors",
+                "factors": [],
+                "palette": {
+                  "kind": "CategoryPalette",
+                  "backcolor": 0,
+                  "properties": [],
+                  "colorList": {
+                    "kind": "ColorList",
+                    "name": "Palette-1"
+                  },
+                  "stringColorElements": []
+                }
+              },
+              "errors": {
+                "kind": "Errors",
+                "factors": []
+              },
+              "labels": {
+                "kind": "Labels",
+                "factors": []
+              },
+              "xAxis": {
+                "kind": "Axis",
+                "axisExtent": {
+                  "kind": "Point",
+                  "x": 80.0,
+                  "y": 59.0
+                },
+                "axisSettings": {
+                  "kind": "AxisSettings",
+                  "properties": [],
+                  "propertyValues": []
+                },
+                "graphicalFactor": {
+                  "kind": "GraphicalFactor",
+                  "factor": {
+                    "kind": "Factor",
+                    "name": "ds1.Median Kinase Statistic",
+                    "type": "double"
+                  },
+                  "rectangle": {
+                    "kind": "Rectangle",
+                    "extent": {
+                      "kind": "Point",
+                      "x": 0.0,
+                      "y": 0.0
+                    },
+                    "topLeft": {
+                      "kind": "Point",
+                      "x": 0.0,
+                      "y": 0.0
+                    }
+                  }
+                }
+              },
+              "yAxis": {
+                "kind": "Axis",
+                "axisExtent": {
+                  "kind": "Point",
+                  "x": 80.0,
+                  "y": 30.0
+                },
+                "axisSettings": {
+                  "kind": "AxisSettings",
+                  "properties": [],
+                  "propertyValues": []
+                },
+                "graphicalFactor": {
+                  "kind": "GraphicalFactor",
+                  "factor": {
+                    "kind": "Factor",
+                    "name": "ds1.Median Final score",
+                    "type": "double"
+                  },
+                  "rectangle": {
+                    "kind": "Rectangle",
+                    "extent": {
+                      "kind": "Point",
+                      "x": 0.0,
+                      "y": 0.0
+                    },
+                    "topLeft": {
+                      "kind": "Point",
+                      "x": 0.0,
+                      "y": 0.0
+                    }
+                  }
+                }
+              },
+              "taskId": "",
+              "preprocessors": []
+            }
+          ]
+        },
+        "columnTable": {
+          "kind": "CrosstabTable",
+          "cellSize": 493.0,
+          "offset": 0,
+          "graphicalFactors": [
+            {
+              "kind": "GraphicalFactor",
+              "factor": {
+                "kind": "Factor",
+                "name": "ds1..Group",
+                "type": "string"
+              },
+              "rectangle": {
+                "kind": "Rectangle",
+                "extent": {
+                  "kind": "Point",
+                  "x": 0.0,
+                  "y": 30.0
+                },
+                "topLeft": {
+                  "kind": "Point",
+                  "x": 0.0,
+                  "y": 0.0
+                }
+              }
+            }
+          ],
+          "rectangleSelections": [],
+          "nRows": 1
+        },
+        "filters": {
+          "kind": "Filters",
+          "removeNaN": true,
+          "namedFilters": []
+        },
+        "operatorSettings": {
+          "kind": "OperatorSettings",
+          "namespace": "volcano",
+          "operatorRef": {
+            "kind": "OperatorRef",
+            "name": "",
+            "version": "",
+            "operatorId": "",
+            "operatorKind": "",
+            "propertyValues": [],
+            "url": {
+              "kind": "Url",
+              "uri": ""
+            }
+          },
+          "environment": [
+            {
+              "kind": "Pair",
+              "key": "cpu",
+              "value": "0"
+            },
+            {
+              "kind": "Pair",
+              "key": "ram",
+              "value": "0"
+            },
+            {
+              "kind": "Pair",
+              "key": "cpu-shares",
+              "value": "0"
+            },
+            {
+              "kind": "Pair",
+              "key": "tercen.collect.stats",
+              "value": "false"
+            },
+            {
+              "kind": "Pair",
+              "key": "debug",
+              "value": "false"
+            }
+          ],
+          "operatorModel": {
+            "kind": "OperatorModel"
+          }
+        },
+        "rowTable": {
+          "kind": "CrosstabTable",
+          "cellSize": 370.0,
+          "offset": 0,
+          "graphicalFactors": [
+            {
+              "kind": "GraphicalFactor",
+              "factor": {
+                "kind": "Factor",
+                "name": "",
+                "type": "string"
+              },
+              "rectangle": {
+                "kind": "Rectangle",
+                "extent": {
+                  "kind": "Point",
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "topLeft": {
+                  "kind": "Point",
+                  "x": 0.0,
+                  "y": 0.0
+                }
+              }
+            }
+          ],
+          "rectangleSelections": [],
+          "nRows": 1
+        },
+        "taskId": ""
+      },
+      "computedRelation": {
+        "kind": "Relation",
+        "id": "dde6ffed-a28b-4350-b510-9799a6d874f4"
+      },
+      "parentDataStepId": ""
+    },
+    {
+      "kind": "ViewStep",
+      "id": "0aa737e9-ae7a-49a6-aa1b-dcd216573529",
+      "groupId": "",
+      "name": "View",
+      "inputs": [
+        {
+          "kind": "InputPort",
+          "id": "0aa737e9-ae7a-49a6-aa1b-dcd216573529-i-0",
+          "linkType": "any",
+          "name": "in"
+        }
+      ],
+      "outputs": [],
+      "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+          "kind": "Point",
+          "x": 88.99000000000001,
+          "y": 55.0
+        },
+        "topLeft": {
+          "kind": "Point",
+          "x": 910.6754870605473,
+          "y": 299.5
+        }
+      },
+      "state": {
+        "kind": "StepState",
+        "taskId": "",
+        "taskState": {
+          "kind": "InitState"
+        }
+      }
+    },
+    {
       "kind": "InStep",
-      "id": "4c79038d-5255-48cd-b79b-3dd1b24c34c5",
+      "id": "7cead796-d30b-47d7-af26-53ed942808e9",
       "groupId": "",
       "name": "Input",
       "inputs": [
         {
           "kind": "InputPort",
-          "id": "4c79038d-5255-48cd-b79b-3dd1b24c34c5-i-0",
+          "id": "7cead796-d30b-47d7-af26-53ed942808e9-i-0",
           "linkType": "any",
           "name": "from"
         }
@@ -2019,7 +2353,7 @@
       "outputs": [
         {
           "kind": "OutputPort",
-          "id": "4c79038d-5255-48cd-b79b-3dd1b24c34c5-o-0",
+          "id": "7cead796-d30b-47d7-af26-53ed942808e9-o-0",
           "linkType": "any",
           "name": "to"
         }
@@ -2033,8 +2367,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 622.5050000000001,
-          "y": -46.5
+          "x": 633.5050000000001,
+          "y": -66.5
         }
       },
       "state": {
@@ -2052,13 +2386,13 @@
     },
     {
       "kind": "OutStep",
-      "id": "b01d5793-3c97-4cb2-b95d-9f87e4aadc48",
+      "id": "b41d2775-a5ab-4b19-9b65-2f1e3308473e",
       "groupId": "",
       "name": "Output",
       "inputs": [
         {
           "kind": "InputPort",
-          "id": "b01d5793-3c97-4cb2-b95d-9f87e4aadc48-i-0",
+          "id": "b41d2775-a5ab-4b19-9b65-2f1e3308473e-i-0",
           "linkType": "any",
           "name": "from"
         }
@@ -2066,7 +2400,7 @@
       "outputs": [
         {
           "kind": "OutputPort",
-          "id": "b01d5793-3c97-4cb2-b95d-9f87e4aadc48-o-0",
+          "id": "b41d2775-a5ab-4b19-9b65-2f1e3308473e-o-0",
           "linkType": "any",
           "name": "to"
         }
@@ -2080,8 +2414,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 775.140541687012,
-          "y": 467.5
+          "x": 755.140541687012,
+          "y": 479.5
         }
       },
       "state": {
@@ -2100,7 +2434,7 @@
   ],
   "offset": {
     "kind": "Point",
-    "x": 227.0,
-    "y": 146.0
+    "x": 6.0,
+    "y": 79.0
   }
 }
