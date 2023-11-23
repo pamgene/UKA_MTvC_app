@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "9cc94005c8fae0fc0dd266c577b0ed3d",
   "isDeleted": false,
-  "rev": "57-18529a842868398a83e856f386ed20ec",
+  "rev": "58-9eb886c065cce4351886632145cb0fb0",
   "description": "Converts a list of peptides into a list of kinases.",
   "name": "UKA_MTvC_app",
   "createdBy": "dschuller",
@@ -17,7 +17,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-11-22T12:46:32.904544Z"
+    "value": "2023-11-23T13:59:14.090356Z"
   },
   "urls": [
     {
@@ -407,7 +407,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 3
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -420,8 +420,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "UKA operator",
-            "version": "0.0.1",
-            "operatorId": "375b976c71390543dc5c4a15c7b36679",
+            "version": "0.0.2",
+            "operatorId": "9a9eb9fb57611dc93df0763ceb41330a",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -534,7 +534,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 173
+          "nRows": 1
         },
         "taskId": ""
       },
