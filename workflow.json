@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "9cc94005c8fae0fc0dd266c577b0ed3d",
   "isDeleted": false,
-  "rev": "58-9eb886c065cce4351886632145cb0fb0",
+  "rev": "59-b120737e4ca5ebc6ca3b9a1c417fc927",
   "description": "Converts a list of peptides into a list of kinases.",
   "name": "UKA_MTvC_app",
   "createdBy": "dschuller",
@@ -17,7 +17,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-11-23T13:59:14.090356Z"
+    "value": "2023-11-27T14:40:43.446220Z"
   },
   "urls": [
     {
@@ -204,8 +204,7 @@
                 },
                 "axisSettings": {
                   "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
+                  "meta": []
                 },
                 "graphicalFactor": {
                   "kind": "GraphicalFactor",
@@ -238,8 +237,7 @@
                 },
                 "axisSettings": {
                   "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
+                  "meta": []
                 },
                 "graphicalFactor": {
                   "kind": "GraphicalFactor",
@@ -315,8 +313,7 @@
                 },
                 "axisSettings": {
                   "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
+                  "meta": []
                 },
                 "graphicalFactor": {
                   "kind": "GraphicalFactor",
@@ -349,8 +346,7 @@
                 },
                 "axisSettings": {
                   "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
+                  "meta": []
                 },
                 "graphicalFactor": {
                   "kind": "GraphicalFactor",
@@ -420,8 +416,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "UKA operator",
-            "version": "0.0.2",
-            "operatorId": "9a9eb9fb57611dc93df0763ceb41330a",
+            "version": "0.0.3",
+            "operatorId": "5c2f7c0de385feb10f175d1a11685f1b",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -634,8 +630,7 @@
                 },
                 "axisSettings": {
                   "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
+                  "meta": []
                 },
                 "graphicalFactor": {
                   "kind": "GraphicalFactor",
@@ -668,8 +663,7 @@
                 },
                 "axisSettings": {
                   "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
+                  "meta": []
                 },
                 "graphicalFactor": {
                   "kind": "GraphicalFactor",
@@ -948,8 +942,7 @@
                 },
                 "axisSettings": {
                   "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
+                  "meta": []
                 },
                 "graphicalFactor": {
                   "kind": "GraphicalFactor",
@@ -982,8 +975,7 @@
                 },
                 "axisSettings": {
                   "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
+                  "meta": []
                 },
                 "graphicalFactor": {
                   "kind": "GraphicalFactor",
@@ -1677,8 +1669,7 @@
                 },
                 "axisSettings": {
                   "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
+                  "meta": []
                 },
                 "graphicalFactor": {
                   "kind": "GraphicalFactor",
@@ -1711,8 +1702,7 @@
                 },
                 "axisSettings": {
                   "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
+                  "meta": []
                 },
                 "graphicalFactor": {
                   "kind": "GraphicalFactor",
@@ -1985,8 +1975,7 @@
                 },
                 "axisSettings": {
                   "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
+                  "meta": []
                 },
                 "graphicalFactor": {
                   "kind": "GraphicalFactor",
@@ -2019,8 +2008,7 @@
                 },
                 "axisSettings": {
                   "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
+                  "meta": []
                 },
                 "graphicalFactor": {
                   "kind": "GraphicalFactor",
