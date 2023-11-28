@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "9cc94005c8fae0fc0dd266c577b0ed3d",
   "isDeleted": false,
-  "rev": "61-3efc0f5d5e576788035197f8b59e2476",
+  "rev": "63-7b7a8828a2cefcb351169ba95a1bc8f4",
   "description": "Converts a list of peptides into a list of kinases.",
   "name": "UKA_MTvC_app",
   "createdBy": "dschuller",
@@ -17,7 +17,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-11-28T15:43:04.882346Z"
+    "value": "2023-11-28T15:55:57.581843Z"
   },
   "urls": [
     {
@@ -90,15 +90,15 @@
     },
     {
       "kind": "Link",
-      "id": "cac70c78-528d-44cc-983f-3baa81496031",
+      "id": "dae5698e-521e-4df1-9824-1d1d34cf2508",
       "inputId": "a13ba99f-4697-4e80-9cc1-16de6f1f35ed-i-0",
       "outputId": "700c68c5-2000-49d5-9c27-cb075bf61929-o-0"
     },
     {
       "kind": "Link",
-      "id": "d62b17bb-e375-4df0-8690-dce74015c3c4",
+      "id": "cbfac01c-5da3-4e79-8b68-53a35074a0cd",
       "inputId": "700c68c5-2000-49d5-9c27-cb075bf61929-i-0",
-      "outputId": "b8538994-1b75-4f04-815a-915739ac4ade-o-0"
+      "outputId": "3c36455d-c7f4-40a3-9ec4-56fb19d905c6-o-0"
     }
   ],
   "steps": [
@@ -530,7 +530,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "a466cde5-1498-46f5-ac11-6572efb3e17f"
+        "id": "bff967dc-1078-4f2e-b469-6f3ba44fe4d7"
       },
       "parentDataStepId": ""
     },
@@ -842,7 +842,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "7e4ea946-35e7-412f-997f-c8c5bcdc8167"
+        "id": "72435996-c71d-481f-8e55-1a2c6332199c"
       },
       "parentDataStepId": ""
     },
@@ -1154,7 +1154,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "720c69c2-51de-45be-bf51-e93333c1c834"
+        "id": "9d45b4f8-943c-482e-bd7a-0e1b203365e9"
       },
       "parentDataStepId": ""
     },
@@ -1601,16 +1601,35 @@
               },
               "colors": {
                 "kind": "Colors",
-                "factors": [],
+                "factors": [
+                  {
+                    "kind": "Factor",
+                    "name": "ds1.Median Final score",
+                    "type": "double"
+                  }
+                ],
                 "palette": {
-                  "kind": "CategoryPalette",
+                  "kind": "RampPalette",
                   "backcolor": 0,
                   "properties": [],
-                  "colorList": {
-                    "kind": "ColorList",
-                    "name": ""
-                  },
-                  "stringColorElements": []
+                  "isUserDefined": true,
+                  "doubleColorElements": [
+                    {
+                      "kind": "DoubleColorElement",
+                      "color": 726291,
+                      "stringValue": "0"
+                    },
+                    {
+                      "kind": "DoubleColorElement",
+                      "color": 9867921,
+                      "stringValue": "1.3"
+                    },
+                    {
+                      "kind": "DoubleColorElement",
+                      "color": 16711680,
+                      "stringValue": "2.5"
+                    }
+                  ]
                 }
               },
               "errors": {
@@ -1726,7 +1745,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 2
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -1813,7 +1832,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "1ebd67d0-fe63-4005-ac70-c21b284aec07"
+        "id": "662bf5fd-6b58-48c5-aae3-d63a8bd63388"
       },
       "parentDataStepId": ""
     },
@@ -1997,7 +2016,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 1
+          "nRows": 9
         },
         "filters": {
           "kind": "Filters",
@@ -2198,25 +2217,25 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 1
+          "nRows": 174
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "e801127a-e52c-4377-9a78-f4b8df1363a8"
+        "id": "332dc659-ceb4-42a2-8cf5-a3af16a42940"
       },
       "parentDataStepId": ""
     },
     {
       "kind": "InStep",
-      "id": "b8538994-1b75-4f04-815a-915739ac4ade",
+      "id": "3c36455d-c7f4-40a3-9ec4-56fb19d905c6",
       "groupId": "",
       "name": "Input",
       "inputs": [
         {
           "kind": "InputPort",
-          "id": "b8538994-1b75-4f04-815a-915739ac4ade-i-0",
+          "id": "3c36455d-c7f4-40a3-9ec4-56fb19d905c6-i-0",
           "linkType": "any",
           "name": "from"
         }
@@ -2224,7 +2243,7 @@
       "outputs": [
         {
           "kind": "OutputPort",
-          "id": "b8538994-1b75-4f04-815a-915739ac4ade-o-0",
+          "id": "3c36455d-c7f4-40a3-9ec4-56fb19d905c6-o-0",
           "linkType": "any",
           "name": "to"
         }
@@ -2238,8 +2257,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 626.5050000000001,
-          "y": -65.5
+          "x": 630.5050000000001,
+          "y": -62.5
         }
       },
       "state": {
