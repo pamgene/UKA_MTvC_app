@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "9cc94005c8fae0fc0dd266c577b0ed3d",
   "isDeleted": false,
-  "rev": "63-7b7a8828a2cefcb351169ba95a1bc8f4",
+  "rev": "64-fdd096cc99b2a76f33f8c077b5021909",
   "description": "Converts a list of peptides into a list of kinases.",
   "name": "UKA_MTvC_app",
   "createdBy": "dschuller",
@@ -17,7 +17,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-11-28T15:55:57.581843Z"
+    "value": "2023-11-29T10:21:06.446467Z"
   },
   "urls": [
     {
@@ -78,27 +78,39 @@
     },
     {
       "kind": "Link",
-      "id": "fe4fe64a-faf2-4b16-bfa2-63e6aee4ab39",
-      "inputId": "28dad2a6-df63-4df1-8989-100ed096f12a-i-0",
-      "outputId": "2ca378e5-1717-4952-ad2d-caec64d253c8-o-0"
-    },
-    {
-      "kind": "Link",
       "id": "ee0e37d8-347f-4f4b-84d5-8ee45cbec2ee",
       "inputId": "8991e8de-be55-4b23-acfb-2fc2fdc54275-i-0",
       "outputId": "35b3b8d1-a7fc-46b8-8076-21d81c7429b0-o-0"
     },
     {
       "kind": "Link",
-      "id": "dae5698e-521e-4df1-9824-1d1d34cf2508",
+      "id": "c58fa095-f8c5-4188-bddd-f84576181a50",
+      "inputId": "28dad2a6-df63-4df1-8989-100ed096f12a-i-0",
+      "outputId": "8991e8de-be55-4b23-acfb-2fc2fdc54275-o-0"
+    },
+    {
+      "kind": "Link",
+      "id": "5fe8f0d8-d56b-475a-9527-04c2b26860e0",
+      "inputId": "1546f378-4768-4598-a4e0-fdf3d5f24a37-i-0",
+      "outputId": "28dad2a6-df63-4df1-8989-100ed096f12a-o-0"
+    },
+    {
+      "kind": "Link",
+      "id": "f7154167-4020-4ecb-ada9-edd615f7e382",
       "inputId": "a13ba99f-4697-4e80-9cc1-16de6f1f35ed-i-0",
       "outputId": "700c68c5-2000-49d5-9c27-cb075bf61929-o-0"
     },
     {
       "kind": "Link",
-      "id": "cbfac01c-5da3-4e79-8b68-53a35074a0cd",
+      "id": "33bdd26f-2c48-4d42-a480-b9d2d8d92e05",
       "inputId": "700c68c5-2000-49d5-9c27-cb075bf61929-i-0",
-      "outputId": "3c36455d-c7f4-40a3-9ec4-56fb19d905c6-o-0"
+      "outputId": "63b4060a-39cc-4b5c-a188-58d4fa5171b7-o-0"
+    },
+    {
+      "kind": "Link",
+      "id": "27573f51-09d3-4f67-88fc-ba4f1d499567",
+      "inputId": "98fc458d-6acb-4e78-82ad-f063d9ea47ca-i-0",
+      "outputId": "2ca378e5-1717-4952-ad2d-caec64d253c8-o-0"
     }
   ],
   "steps": [
@@ -530,7 +542,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "bff967dc-1078-4f2e-b469-6f3ba44fe4d7"
+        "id": "2f17762d-133e-4968-a0c9-308ceb81411a"
       },
       "parentDataStepId": ""
     },
@@ -842,7 +854,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "72435996-c71d-481f-8e55-1a2c6332199c"
+        "id": "f9304be6-2597-4f5c-884a-dc40813bbfa8"
       },
       "parentDataStepId": ""
     },
@@ -1154,7 +1166,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "9d45b4f8-943c-482e-bd7a-0e1b203365e9"
+        "id": "aaae50b0-e3db-4064-84a1-71da24742704"
       },
       "parentDataStepId": ""
     },
@@ -1188,8 +1200,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 453.14054168701205,
-          "y": 384.5
+          "x": 627.140541687012,
+          "y": 390.5
         }
       },
       "state": {
@@ -1544,7 +1556,7 @@
       "kind": "DataStep",
       "id": "28dad2a6-df63-4df1-8989-100ed096f12a",
       "groupId": "",
-      "name": "Kinase volcano",
+      "name": "Volcano simple",
       "inputs": [
         {
           "kind": "InputPort",
@@ -1565,13 +1577,13 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 108.05989074707031,
+          "x": 108.70387268066406,
           "y": 55.0
         },
         "topLeft": {
           "kind": "Point",
-          "x": 615.140541687012,
-          "y": 386.5
+          "x": 618.140541687012,
+          "y": 571.5
         }
       },
       "state": {
@@ -1638,20 +1650,14 @@
               },
               "labels": {
                 "kind": "Labels",
-                "factors": [
-                  {
-                    "kind": "Factor",
-                    "name": "ds1.Kinase Name",
-                    "type": "string"
-                  }
-                ]
+                "factors": []
               },
               "xAxis": {
                 "kind": "Axis",
                 "axisExtent": {
                   "kind": "Point",
                   "x": 80.0,
-                  "y": 59.0
+                  "y": 46.0
                 },
                 "axisSettings": {
                   "kind": "AxisSettings",
@@ -1719,7 +1725,7 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 250.0,
+          "cellSize": 277.0,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -1745,7 +1751,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 1
+          "nRows": 2
         },
         "filters": {
           "kind": "Filters",
@@ -1757,14 +1763,14 @@
           "namespace": "volcano",
           "operatorRef": {
             "kind": "OperatorRef",
-            "name": "Volcano Plot",
-            "version": "0.0.3",
-            "operatorId": "e3d98495ccd1bc1ddde3430a4d67ad7e",
-            "operatorKind": "ShinyOperator",
+            "name": "",
+            "version": "",
+            "operatorId": "",
+            "operatorKind": "",
             "propertyValues": [],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/tercen/volcano_shiny_operator"
+              "uri": ""
             }
           },
           "environment": [
@@ -1832,7 +1838,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "662bf5fd-6b58-48c5-aae3-d63a8bd63388"
+        "id": "179df9f0-0acb-4ffc-9787-8b3bee9b0b65"
       },
       "parentDataStepId": ""
     },
@@ -1866,8 +1872,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 450.14054168701205,
-          "y": 472.5
+          "x": 627.140541687012,
+          "y": 477.5
         }
       },
       "state": {
@@ -2223,19 +2229,54 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "332dc659-ceb4-42a2-8cf5-a3af16a42940"
+        "id": "d00e3a3e-247f-46e9-a1ef-9b8dd5b3d3d3"
       },
       "parentDataStepId": ""
     },
     {
+      "kind": "ViewStep",
+      "id": "1546f378-4768-4598-a4e0-fdf3d5f24a37",
+      "groupId": "",
+      "name": "View",
+      "inputs": [
+        {
+          "kind": "InputPort",
+          "id": "1546f378-4768-4598-a4e0-fdf3d5f24a37-i-0",
+          "linkType": "any",
+          "name": "in"
+        }
+      ],
+      "outputs": [],
+      "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+          "kind": "Point",
+          "x": 88.99000000000001,
+          "y": 55.0
+        },
+        "topLeft": {
+          "kind": "Point",
+          "x": 627.9974780273441,
+          "y": 656.5
+        }
+      },
+      "state": {
+        "kind": "StepState",
+        "taskId": "",
+        "taskState": {
+          "kind": "InitState"
+        }
+      }
+    },
+    {
       "kind": "InStep",
-      "id": "3c36455d-c7f4-40a3-9ec4-56fb19d905c6",
+      "id": "63b4060a-39cc-4b5c-a188-58d4fa5171b7",
       "groupId": "",
       "name": "Input",
       "inputs": [
         {
           "kind": "InputPort",
-          "id": "3c36455d-c7f4-40a3-9ec4-56fb19d905c6-i-0",
+          "id": "63b4060a-39cc-4b5c-a188-58d4fa5171b7-i-0",
           "linkType": "any",
           "name": "from"
         }
@@ -2243,7 +2284,7 @@
       "outputs": [
         {
           "kind": "OutputPort",
-          "id": "3c36455d-c7f4-40a3-9ec4-56fb19d905c6-o-0",
+          "id": "63b4060a-39cc-4b5c-a188-58d4fa5171b7-o-0",
           "linkType": "any",
           "name": "to"
         }
@@ -2257,8 +2298,55 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 630.5050000000001,
-          "y": -62.5
+          "x": 628.5050000000001,
+          "y": -50.5
+        }
+      },
+      "state": {
+        "kind": "StepState",
+        "taskId": "",
+        "taskState": {
+          "kind": "InitState"
+        }
+      },
+      "groupPortPosition": {
+        "kind": "Point",
+        "x": 0.0,
+        "y": 0.0
+      }
+    },
+    {
+      "kind": "OutStep",
+      "id": "98fc458d-6acb-4e78-82ad-f063d9ea47ca",
+      "groupId": "",
+      "name": "Output",
+      "inputs": [
+        {
+          "kind": "InputPort",
+          "id": "98fc458d-6acb-4e78-82ad-f063d9ea47ca-i-0",
+          "linkType": "any",
+          "name": "from"
+        }
+      ],
+      "outputs": [
+        {
+          "kind": "OutputPort",
+          "id": "98fc458d-6acb-4e78-82ad-f063d9ea47ca-o-0",
+          "linkType": "any",
+          "name": "to"
+        }
+      ],
+      "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+          "kind": "Point",
+          "x": 88.99000000000001,
+          "y": 55.0
+        },
+        "topLeft": {
+          "kind": "Point",
+          "x": 760.140541687012,
+          "y": 296.5
         }
       },
       "state": {
@@ -2277,7 +2365,7 @@
   ],
   "offset": {
     "kind": "Point",
-    "x": 90.0,
-    "y": 223.0
+    "x": -109.0,
+    "y": 109.0
   }
 }
