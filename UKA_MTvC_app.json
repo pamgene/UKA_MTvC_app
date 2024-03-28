@@ -40,11 +40,6 @@
    "kind": "Pair",
    "key": "_upgrade_old_task_",
    "value": "0.10.15"
-  },
-  {
-   "kind": "Pair",
-   "key": "PUBLISHED",
-   "value": "true"
   }
  ],
  "url": {
@@ -100,15 +95,21 @@
   },
   {
    "kind": "Link",
-   "id": "2f34449a-5984-485c-955a-feacacf8ffa6",
+   "id": "7312f544-5d12-47fc-832f-8d597f808b9a",
    "inputId": "a13ba99f-4697-4e80-9cc1-16de6f1f35ed-i-0",
-   "outputId": "700c68c5-2000-49d5-9c27-cb075bf61929-o-0"
+   "outputId": "ad3f7229-341e-4c14-8d05-19fb32529ff6-o-0"
   },
   {
    "kind": "Link",
-   "id": "c3651ac1-91aa-4d64-9715-cd0e8c7bafac",
-   "inputId": "700c68c5-2000-49d5-9c27-cb075bf61929-i-0",
-   "outputId": "bf502419-a21f-485f-9a2c-4acbe696f6ae-o-0"
+   "id": "bbbfbe3e-358c-4704-b7a2-2721dfa8e44a",
+   "inputId": "ad3f7229-341e-4c14-8d05-19fb32529ff6-i-0",
+   "outputId": "85ccdcb0-54b3-4f84-9bef-98f9db41d490-o-0"
+  },
+  {
+   "kind": "Link",
+   "id": "525e5df8-4109-43ce-aed6-4e418ee20ec8",
+   "inputId": "90e45d88-3ae3-4785-956e-fc47a8dcc996-i-0",
+   "outputId": "2ca378e5-1717-4952-ad2d-caec64d253c8-o-0"
   }
  ],
  "steps": [
@@ -548,7 +549,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "255649a0-e832-47e3-8558-856103e05d83"
+    "id": "07682101-7e61-4240-a1ab-a6916826e9e5"
    },
    "parentDataStepId": ""
   },
@@ -868,7 +869,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "135aa5df-cde2-457a-8c0a-0fa30f4041de"
+    "id": "fbad8099-e7fc-4aaa-b148-414b7e187ede"
    },
    "parentDataStepId": ""
   },
@@ -1097,7 +1098,7 @@
         }
        ],
        "meta": [],
-       "name": "Group !=Control"
+       "name": "Group not Control"
       }
      ]
     },
@@ -1188,7 +1189,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "4ca1ee44-c174-4ea7-acc3-d715e2f487c3"
+    "id": "bbc1d64c-fbe9-43a9-bbe6-6dd87ff2ed4e"
    },
    "parentDataStepId": ""
   },
@@ -1289,292 +1290,6 @@
     "gatherType": ""
    },
    "meltedAttributes": []
-  },
-  {
-   "kind": "WizardStep",
-   "id": "700c68c5-2000-49d5-9c27-cb075bf61929",
-   "groupId": "",
-   "name": "Wizard",
-   "inputs": [
-    {
-     "kind": "InputPort",
-     "id": "700c68c5-2000-49d5-9c27-cb075bf61929-i-0",
-     "linkType": "relation",
-     "name": "table"
-    }
-   ],
-   "outputs": [
-    {
-     "kind": "OutputPort",
-     "id": "700c68c5-2000-49d5-9c27-cb075bf61929-o-0",
-     "linkType": "relation",
-     "name": "table"
-    }
-   ],
-   "rectangle": {
-    "kind": "Rectangle",
-    "extent": {
-     "kind": "Point",
-     "x": 88.99000000000001,
-     "y": 55.0
-    },
-    "topLeft": {
-     "kind": "Point",
-     "x": 628.9109399414065,
-     "y": 25.5
-    }
-   },
-   "state": {
-    "kind": "StepState",
-    "taskId": "",
-    "taskState": {
-     "kind": "InitState"
-    }
-   },
-   "description": "",
-   "model": {
-    "kind": "WizardStepModel",
-    "namespace": "UKA_MTvC",
-    "description": "",
-    "appDesignType": "UKA_MTvC.c06_groups_control_pair",
-    "factors": [
-     {
-      "kind": "MappingFactor",
-      "name": "Measurement",
-      "type": "double",
-      "description": "",
-      "ontologyMapping": "",
-      "crosstabMapping": "",
-      "cardinality": "",
-      "factors": [],
-      "factorName": "Measurement",
-      "isSingle": true,
-      "isRequired": true
-     },
-     {
-      "kind": "MappingFactor",
-      "name": "Variable",
-      "type": "string",
-      "description": "",
-      "ontologyMapping": "",
-      "crosstabMapping": "",
-      "cardinality": "",
-      "factors": [],
-      "factorName": "Variable",
-      "isSingle": false,
-      "isRequired": true
-     },
-     {
-      "kind": "MappingFactor",
-      "name": "Group",
-      "type": "string",
-      "description": "",
-      "ontologyMapping": "",
-      "crosstabMapping": "",
-      "cardinality": "",
-      "factors": [],
-      "factorName": "Group",
-      "isSingle": false,
-      "isRequired": true
-     },
-     {
-      "kind": "MappingFactor",
-      "name": "Observation",
-      "type": "string",
-      "description": "",
-      "ontologyMapping": "",
-      "crosstabMapping": "",
-      "cardinality": "",
-      "factors": [],
-      "factorName": "Observation",
-      "isSingle": false,
-      "isRequired": true
-     }
-    ],
-    "filters": [
-     {
-      "kind": "MappingFilter",
-      "name": "Control",
-      "description": "Select the factor which defines the control.\n\nExample:\n* C-(DMSO, WT, Control)",
-      "namedFilter": {
-       "kind": "NamedFilter",
-       "logical": "and",
-       "not": false,
-       "filterExprs": [
-        {
-         "kind": "FilterExpr",
-         "filterOp": "equals",
-         "stringValue": "Control",
-         "factor": {
-          "kind": "Factor",
-          "name": "Group",
-          "type": "string"
-         }
-        }
-       ],
-       "meta": [],
-       "name": "Control"
-      },
-      "isRequired": true
-     },
-     {
-      "kind": "MappingFilter",
-      "name": "Group !=Control",
-      "description": "Select the factor which defines the Test condition.",
-      "namedFilter": {
-       "kind": "NamedFilter",
-       "logical": "and",
-       "not": false,
-       "filterExprs": [
-        {
-         "kind": "FilterExpr",
-         "filterOp": "notequals",
-         "stringValue": "Control",
-         "factor": {
-          "kind": "Factor",
-          "name": "Group",
-          "type": "string"
-         }
-        }
-       ],
-       "meta": [],
-       "name": "Group not Control"
-      },
-      "isRequired": true
-     }
-    ],
-    "steps": [],
-    "defaultFactors": [
-     {
-      "kind": "MappingFactor",
-      "name": "Measurement",
-      "type": "double",
-      "description": "Select the factor that defines the values to use in the computation.\n\nExample:\n* log transform of S100\n* log transformed and ComBat Corrected S100\n* VSN transformed S100\n* VSN transformed and ComBat Corrected S100",
-      "ontologyMapping": "",
-      "crosstabMapping": "",
-      "cardinality": "",
-      "factors": [
-       {
-        "kind": "Factor",
-        "name": "Measurement",
-        "type": "double"
-       }
-      ],
-      "factorName": "Quantitation Type",
-      "isSingle": true,
-      "isRequired": true
-     },
-     {
-      "kind": "MappingFactor",
-      "name": "Variable",
-      "type": "string",
-      "description": "Select the peptide identifier.\n\nExample:\n* ID",
-      "ontologyMapping": "",
-      "crosstabMapping": "",
-      "cardinality": "",
-      "factors": [
-       {
-        "kind": "Factor",
-        "name": "Variable",
-        "type": "string"
-       }
-      ],
-      "factorName": "Peptide",
-      "isSingle": false,
-      "isRequired": true
-     },
-     {
-      "kind": "MappingFactor",
-      "name": "Group",
-      "type": "string",
-      "description": "Select the factor that defines the comparison groups.\n\nExample:\n* Test Condition\n* Treatment off chip",
-      "ontologyMapping": "",
-      "crosstabMapping": "",
-      "cardinality": "",
-      "factors": [
-       {
-        "kind": "Factor",
-        "name": "Group",
-        "type": "string"
-       }
-      ],
-      "factorName": "Test Condition",
-      "isSingle": false,
-      "isRequired": true
-     },
-     {
-      "kind": "MappingFactor",
-      "name": "Observation",
-      "type": "string",
-      "description": "Select the factor(s) defining a single value per cell.\n\nExample:\n* Barcode and Row\n* Barcode and Array\n * Sample Name",
-      "ontologyMapping": "",
-      "crosstabMapping": "",
-      "cardinality": "",
-      "factors": [
-       {
-        "kind": "Factor",
-        "name": "Observation",
-        "type": "string"
-       }
-      ],
-      "factorName": "Single Data Value per Cell",
-      "isSingle": false,
-      "isRequired": true
-     }
-    ],
-    "defaultFilters": [
-     {
-      "kind": "MappingFilter",
-      "name": "Control",
-      "description": "Select the factor which defines the control.\n\nExample:\n* C-(DMSO, WT, Control)",
-      "namedFilter": {
-       "kind": "NamedFilter",
-       "logical": "and",
-       "not": false,
-       "filterExprs": [
-        {
-         "kind": "FilterExpr",
-         "filterOp": "equals",
-         "stringValue": "Control",
-         "factor": {
-          "kind": "Factor",
-          "name": "Group",
-          "type": "string"
-         }
-        }
-       ],
-       "meta": [],
-       "name": "Control"
-      },
-      "isRequired": true
-     },
-     {
-      "kind": "MappingFilter",
-      "name": "Group !=Control",
-      "description": "Select the factor which defines the Test condition.",
-      "namedFilter": {
-       "kind": "NamedFilter",
-       "logical": "and",
-       "not": false,
-       "filterExprs": [
-        {
-         "kind": "FilterExpr",
-         "filterOp": "notequals",
-         "stringValue": "Control",
-         "factor": {
-          "kind": "Factor",
-          "name": "Group",
-          "type": "string"
-         }
-        }
-       ],
-       "meta": [],
-       "name": "Group not Control"
-      },
-      "isRequired": true
-     }
-    ]
-   }
   },
   {
    "kind": "DataStep",
@@ -1870,7 +1585,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "8cb648e2-3d8c-4b1c-9574-92b4a23ecbf9"
+    "id": "ee3968bb-7a5e-4c60-8dc4-72ddc39017dc"
    },
    "parentDataStepId": ""
   },
@@ -2264,7 +1979,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "7224a503-9d55-4969-9f81-de85b6217937"
+    "id": "ff9bbf98-d183-4c25-aaf1-e868ce18ac2a"
    },
    "parentDataStepId": ""
   },
@@ -2604,19 +2319,329 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "68c164f9-f670-477b-b984-6a9e82eedfa4"
+    "id": "a96a0129-947b-4ee0-9589-e2235ed0b655"
    },
    "parentDataStepId": ""
   },
   {
+   "kind": "WizardStep",
+   "id": "ad3f7229-341e-4c14-8d05-19fb32529ff6",
+   "groupId": "",
+   "name": "Wizard",
+   "inputs": [
+    {
+     "kind": "InputPort",
+     "id": "ad3f7229-341e-4c14-8d05-19fb32529ff6-i-0",
+     "linkType": "relation",
+     "name": "table"
+    }
+   ],
+   "outputs": [
+    {
+     "kind": "OutputPort",
+     "id": "ad3f7229-341e-4c14-8d05-19fb32529ff6-o-0",
+     "linkType": "relation",
+     "name": "table"
+    }
+   ],
+   "rectangle": {
+    "kind": "Rectangle",
+    "extent": {
+     "kind": "Point",
+     "x": 88.99000000000001,
+     "y": 55.0
+    },
+    "topLeft": {
+     "kind": "Point",
+     "x": 624.505,
+     "y": 25.5
+    }
+   },
+   "state": {
+    "kind": "StepState",
+    "taskId": "",
+    "taskState": {
+     "kind": "InitState"
+    }
+   },
+   "description": "Create a generic workflow.",
+   "model": {
+    "kind": "WizardStepModel",
+    "namespace": "UKA_MTvC",
+    "description": "",
+    "appDesignType": "UKA_MTvC.c06_groups_control_pair",
+    "factors": [
+     {
+      "kind": "MappingFactor",
+      "name": "Measurement",
+      "type": "double",
+      "description": "Select the factor that defines the values to use in the computation.\n\nExample:\n* log transform of S100\n* log transformed and ComBat Corrected S100\n* VSN transformed S100\n* VSN transformed and ComBat Corrected S100",
+      "ontologyMapping": "",
+      "crosstabMapping": "",
+      "cardinality": "",
+      "factors": [
+       {
+        "kind": "Factor",
+        "name": "Measurement",
+        "type": "double"
+       }
+      ],
+      "factorName": "Quantitation Type",
+      "isSingle": true,
+      "isRequired": true
+     },
+     {
+      "kind": "MappingFactor",
+      "name": "Variable",
+      "type": "string",
+      "description": "Select the peptide identifier.\n\nExample:\n* ID",
+      "ontologyMapping": "",
+      "crosstabMapping": "",
+      "cardinality": "",
+      "factors": [
+       {
+        "kind": "Factor",
+        "name": "Variable",
+        "type": "string"
+       }
+      ],
+      "factorName": "Peptide",
+      "isSingle": false,
+      "isRequired": true
+     },
+     {
+      "kind": "MappingFactor",
+      "name": "Group",
+      "type": "string",
+      "description": "Select the factor that defines the comparison groups.\n\nExample:\n* Test Condition\n* Treatment off chip",
+      "ontologyMapping": "",
+      "crosstabMapping": "",
+      "cardinality": "",
+      "factors": [
+       {
+        "kind": "Factor",
+        "name": "Group",
+        "type": "string"
+       }
+      ],
+      "factorName": "Test Condition",
+      "isSingle": false,
+      "isRequired": true
+     },
+     {
+      "kind": "MappingFactor",
+      "name": "Observation",
+      "type": "string",
+      "description": "Select the factor(s) defining a single value per cell.\n\nExample:\n* Barcode and Row\n* Barcode and Array\n * Sample Name",
+      "ontologyMapping": "",
+      "crosstabMapping": "",
+      "cardinality": "",
+      "factors": [
+       {
+        "kind": "Factor",
+        "name": "Observation",
+        "type": "string"
+       }
+      ],
+      "factorName": "Single Data Value per Cell",
+      "isSingle": false,
+      "isRequired": true
+     }
+    ],
+    "filters": [
+     {
+      "kind": "MappingFilter",
+      "name": "Control",
+      "description": "Select the factor which defines the control.\n\nExample:\n* C-(DMSO, WT, Control)",
+      "namedFilter": {
+       "kind": "NamedFilter",
+       "logical": "and",
+       "not": false,
+       "filterExprs": [
+        {
+         "kind": "FilterExpr",
+         "filterOp": "equals",
+         "stringValue": "Control",
+         "factor": {
+          "kind": "Factor",
+          "name": "Group",
+          "type": "string"
+         }
+        }
+       ],
+       "meta": [],
+       "name": "Control"
+      },
+      "isRequired": true
+     },
+     {
+      "kind": "MappingFilter",
+      "name": "Group not Control",
+      "description": "Select the factor which defines the Test condition.",
+      "namedFilter": {
+       "kind": "NamedFilter",
+       "logical": "and",
+       "not": false,
+       "filterExprs": [
+        {
+         "kind": "FilterExpr",
+         "filterOp": "notequals",
+         "stringValue": "Control",
+         "factor": {
+          "kind": "Factor",
+          "name": "Group",
+          "type": "string"
+         }
+        }
+       ],
+       "meta": [],
+       "name": "Group not Control"
+      },
+      "isRequired": true
+     }
+    ],
+    "steps": [],
+    "defaultFactors": [
+     {
+      "kind": "MappingFactor",
+      "name": "Measurement",
+      "type": "double",
+      "description": "Select the factor that defines the values to use in the computation.\n\nExample:\n* log transform of S100\n* log transformed and ComBat Corrected S100\n* VSN transformed S100\n* VSN transformed and ComBat Corrected S100",
+      "ontologyMapping": "",
+      "crosstabMapping": "",
+      "cardinality": "",
+      "factors": [
+       {
+        "kind": "Factor",
+        "name": "Measurement",
+        "type": "double"
+       }
+      ],
+      "factorName": "Quantitation Type",
+      "isSingle": true,
+      "isRequired": true
+     },
+     {
+      "kind": "MappingFactor",
+      "name": "Variable",
+      "type": "string",
+      "description": "Select the peptide identifier.\n\nExample:\n* ID",
+      "ontologyMapping": "",
+      "crosstabMapping": "",
+      "cardinality": "",
+      "factors": [
+       {
+        "kind": "Factor",
+        "name": "Variable",
+        "type": "string"
+       }
+      ],
+      "factorName": "Peptide",
+      "isSingle": false,
+      "isRequired": true
+     },
+     {
+      "kind": "MappingFactor",
+      "name": "Group",
+      "type": "string",
+      "description": "Select the factor that defines the comparison groups.\n\nExample:\n* Test Condition\n* Treatment off chip",
+      "ontologyMapping": "",
+      "crosstabMapping": "",
+      "cardinality": "",
+      "factors": [
+       {
+        "kind": "Factor",
+        "name": "Group",
+        "type": "string"
+       }
+      ],
+      "factorName": "Test Condition",
+      "isSingle": false,
+      "isRequired": true
+     },
+     {
+      "kind": "MappingFactor",
+      "name": "Observation",
+      "type": "string",
+      "description": "Select the factor(s) defining a single value per cell.\n\nExample:\n* Barcode and Row\n* Barcode and Array\n * Sample Name",
+      "ontologyMapping": "",
+      "crosstabMapping": "",
+      "cardinality": "",
+      "factors": [
+       {
+        "kind": "Factor",
+        "name": "Observation",
+        "type": "string"
+       }
+      ],
+      "factorName": "Single Data Value per Cell",
+      "isSingle": false,
+      "isRequired": true
+     }
+    ],
+    "defaultFilters": [
+     {
+      "kind": "MappingFilter",
+      "name": "Control",
+      "description": "Select the factor which defines the control.\n\nExample:\n* C-(DMSO, WT, Control)",
+      "namedFilter": {
+       "kind": "NamedFilter",
+       "logical": "and",
+       "not": false,
+       "filterExprs": [
+        {
+         "kind": "FilterExpr",
+         "filterOp": "equals",
+         "stringValue": "Control",
+         "factor": {
+          "kind": "Factor",
+          "name": "Group",
+          "type": "string"
+         }
+        }
+       ],
+       "meta": [],
+       "name": "Control"
+      },
+      "isRequired": true
+     },
+     {
+      "kind": "MappingFilter",
+      "name": "Group not Control",
+      "description": "Select the factor which defines the Test condition.",
+      "namedFilter": {
+       "kind": "NamedFilter",
+       "logical": "and",
+       "not": false,
+       "filterExprs": [
+        {
+         "kind": "FilterExpr",
+         "filterOp": "notequals",
+         "stringValue": "Control",
+         "factor": {
+          "kind": "Factor",
+          "name": "Group",
+          "type": "string"
+         }
+        }
+       ],
+       "meta": [],
+       "name": "Group not Control"
+      },
+      "isRequired": true
+     }
+    ]
+   }
+  },
+  {
    "kind": "InStep",
-   "id": "bf502419-a21f-485f-9a2c-4acbe696f6ae",
+   "id": "85ccdcb0-54b3-4f84-9bef-98f9db41d490",
    "groupId": "",
    "name": "Input",
    "inputs": [
     {
      "kind": "InputPort",
-     "id": "bf502419-a21f-485f-9a2c-4acbe696f6ae-i-0",
+     "id": "85ccdcb0-54b3-4f84-9bef-98f9db41d490-i-0",
      "linkType": "any",
      "name": "from"
     }
@@ -2624,7 +2649,7 @@
    "outputs": [
     {
      "kind": "OutputPort",
-     "id": "bf502419-a21f-485f-9a2c-4acbe696f6ae-o-0",
+     "id": "85ccdcb0-54b3-4f84-9bef-98f9db41d490-o-0",
      "linkType": "any",
      "name": "to"
     }
@@ -2638,8 +2663,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 634.5050000000001,
-     "y": -78.5
+     "x": 633.505,
+     "y": -77.5
     }
    },
    "state": {
@@ -2649,7 +2674,55 @@
      "kind": "InitState"
     }
    },
-   "description": "",
+   "description": "Input of a sub workflow.",
+   "groupPortPosition": {
+    "kind": "Point",
+    "x": 0.0,
+    "y": 0.0
+   }
+  },
+  {
+   "kind": "OutStep",
+   "id": "90e45d88-3ae3-4785-956e-fc47a8dcc996",
+   "groupId": "",
+   "name": "Output",
+   "inputs": [
+    {
+     "kind": "InputPort",
+     "id": "90e45d88-3ae3-4785-956e-fc47a8dcc996-i-0",
+     "linkType": "any",
+     "name": "from"
+    }
+   ],
+   "outputs": [
+    {
+     "kind": "OutputPort",
+     "id": "90e45d88-3ae3-4785-956e-fc47a8dcc996-o-0",
+     "linkType": "any",
+     "name": "to"
+    }
+   ],
+   "rectangle": {
+    "kind": "Rectangle",
+    "extent": {
+     "kind": "Point",
+     "x": 88.99000000000001,
+     "y": 55.0
+    },
+    "topLeft": {
+     "kind": "Point",
+     "x": 763.1405416870119,
+     "y": 298.5
+    }
+   },
+   "state": {
+    "kind": "StepState",
+    "taskId": "",
+    "taskState": {
+     "kind": "InitState"
+    }
+   },
+   "description": "Output of a sub workflow.",
    "groupPortPosition": {
     "kind": "Point",
     "x": 0.0,
@@ -2659,8 +2732,8 @@
  ],
  "offset": {
   "kind": "Point",
-  "x": 228.0,
-  "y": 39.0
+  "x": 55.0,
+  "y": 107.0
  },
  "scale": 1.0
 }
