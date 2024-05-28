@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "4",
+ "id": "1",
  "isDeleted": false,
  "rev": "",
  "description": "Converts a list of peptides into a list of kinases.",
@@ -95,21 +95,21 @@
   },
   {
    "kind": "Link",
-   "id": "7312f544-5d12-47fc-832f-8d597f808b9a",
+   "id": "b439ec5c-1833-4343-8be6-dd7affc189c6",
    "inputId": "a13ba99f-4697-4e80-9cc1-16de6f1f35ed-i-0",
-   "outputId": "ad3f7229-341e-4c14-8d05-19fb32529ff6-o-0"
+   "outputId": "28eca11f-3b1f-406a-b666-5b0e3289eefd-o-0"
   },
   {
    "kind": "Link",
-   "id": "bbbfbe3e-358c-4704-b7a2-2721dfa8e44a",
-   "inputId": "ad3f7229-341e-4c14-8d05-19fb32529ff6-i-0",
-   "outputId": "85ccdcb0-54b3-4f84-9bef-98f9db41d490-o-0"
+   "id": "9353953c-8be5-4c91-9ae9-f3406459c563",
+   "inputId": "28eca11f-3b1f-406a-b666-5b0e3289eefd-i-0",
+   "outputId": "eba6c9b8-f44d-4d6f-987e-c79b3efba46b-o-0"
   },
   {
    "kind": "Link",
-   "id": "525e5df8-4109-43ce-aed6-4e418ee20ec8",
-   "inputId": "90e45d88-3ae3-4785-956e-fc47a8dcc996-i-0",
-   "outputId": "2ca378e5-1717-4952-ad2d-caec64d253c8-o-0"
+   "id": "bdd11822-f4f2-48bb-a284-7f8892917afa",
+   "inputId": "2f56aa17-7876-453a-a5ec-b51f8cbb21e3-i-0",
+   "outputId": "35b3b8d1-a7fc-46b8-8076-21d81c7429b0-o-0"
   }
  ],
  "steps": [
@@ -143,8 +143,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 622.4025781250002,
-     "y": 302.5
+     "x": 621.4025781250002,
+     "y": 301.5
     }
    },
    "state": {
@@ -422,8 +422,8 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "UKA operator",
-      "version": "0.0.3",
-      "operatorId": "1",
+      "version": "0.1.1",
+      "operatorId": "4",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -549,7 +549,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "07682101-7e61-4240-a1ab-a6916826e9e5"
+    "id": "eab185bc-ebb0-44fa-8d0c-6b20d34bef33"
    },
    "parentDataStepId": ""
   },
@@ -778,7 +778,7 @@
         }
        ],
        "meta": [],
-       "name": "Control"
+       "name": "Select Control"
       }
      ]
     },
@@ -789,7 +789,7 @@
       "kind": "OperatorRef",
       "name": "Identity",
       "version": "0.1.3",
-      "operatorId": "2",
+      "operatorId": "0",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -869,7 +869,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "fbad8099-e7fc-4aaa-b148-414b7e187ede"
+    "id": "bd495872-1f35-446b-8861-69dd3cf61aa8"
    },
    "parentDataStepId": ""
   },
@@ -1098,7 +1098,7 @@
         }
        ],
        "meta": [],
-       "name": "Group not Control"
+       "name": "Select Test conditions"
       }
      ]
     },
@@ -1109,7 +1109,7 @@
       "kind": "OperatorRef",
       "name": "Identity",
       "version": "0.1.3",
-      "operatorId": "2",
+      "operatorId": "0",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -1189,7 +1189,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "bbc1d64c-fbe9-43a9-bbe6-6dd87ff2ed4e"
+    "id": "d0e7c1fb-9d4d-4a06-8e89-173a54a5c796"
    },
    "parentDataStepId": ""
   },
@@ -1585,7 +1585,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "ee3968bb-7a5e-4c60-8dc4-72ddc39017dc"
+    "id": "a5e1739c-74ca-4da2-b485-8fe4119194ce"
    },
    "parentDataStepId": ""
   },
@@ -1619,8 +1619,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 632.140541687012,
-     "y": 475.5
+     "x": 635.140541687012,
+     "y": 476.5
     }
    },
    "state": {
@@ -1783,8 +1783,8 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "Export Table",
-      "version": "0.2.5",
-      "operatorId": "3",
+      "version": "0.2.6",
+      "operatorId": "2",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -1979,7 +1979,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "ff9bbf98-d183-4c25-aaf1-e868ce18ac2a"
+    "id": "9d0a89c3-e2e0-4eeb-a5f8-fe7a44d92133"
    },
    "parentDataStepId": ""
   },
@@ -2238,8 +2238,8 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "Volcano Plot",
-      "version": "0.0.3",
-      "operatorId": "0",
+      "version": "0.0.6",
+      "operatorId": "3",
       "operatorKind": "ShinyOperator",
       "propertyValues": [],
       "url": {
@@ -2319,19 +2319,19 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "a96a0129-947b-4ee0-9589-e2235ed0b655"
+    "id": "98f926e6-485c-4e0c-bde4-02d403cb5f59"
    },
    "parentDataStepId": ""
   },
   {
    "kind": "WizardStep",
-   "id": "ad3f7229-341e-4c14-8d05-19fb32529ff6",
+   "id": "28eca11f-3b1f-406a-b666-5b0e3289eefd",
    "groupId": "",
    "name": "Wizard",
    "inputs": [
     {
      "kind": "InputPort",
-     "id": "ad3f7229-341e-4c14-8d05-19fb32529ff6-i-0",
+     "id": "28eca11f-3b1f-406a-b666-5b0e3289eefd-i-0",
      "linkType": "relation",
      "name": "table"
     }
@@ -2339,7 +2339,7 @@
    "outputs": [
     {
      "kind": "OutputPort",
-     "id": "ad3f7229-341e-4c14-8d05-19fb32529ff6-o-0",
+     "id": "28eca11f-3b1f-406a-b666-5b0e3289eefd-o-0",
      "linkType": "relation",
      "name": "table"
     }
@@ -2353,8 +2353,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 624.505,
-     "y": 25.5
+     "x": 622.505,
+     "y": 12.5
     }
    },
    "state": {
@@ -2451,8 +2451,8 @@
     "filters": [
      {
       "kind": "MappingFilter",
-      "name": "Control",
-      "description": "Select the factor which defines the control.\n\nExample:\n* C-(DMSO, WT, Control)",
+      "name": "Select Control",
+      "description": "",
       "namedFilter": {
        "kind": "NamedFilter",
        "logical": "and",
@@ -2470,14 +2470,14 @@
         }
        ],
        "meta": [],
-       "name": "Control"
+       "name": "Select Control"
       },
       "isRequired": true
      },
      {
       "kind": "MappingFilter",
-      "name": "Group not Control",
-      "description": "Select the factor which defines the Test condition.",
+      "name": "Select Test conditions",
+      "description": "",
       "namedFilter": {
        "kind": "NamedFilter",
        "logical": "and",
@@ -2495,7 +2495,7 @@
         }
        ],
        "meta": [],
-       "name": "Group not Control"
+       "name": "Select Test conditions"
       },
       "isRequired": true
      }
@@ -2582,8 +2582,8 @@
     "defaultFilters": [
      {
       "kind": "MappingFilter",
-      "name": "Control",
-      "description": "Select the factor which defines the control.\n\nExample:\n* C-(DMSO, WT, Control)",
+      "name": "Select Control",
+      "description": "",
       "namedFilter": {
        "kind": "NamedFilter",
        "logical": "and",
@@ -2601,14 +2601,14 @@
         }
        ],
        "meta": [],
-       "name": "Control"
+       "name": "Select Control"
       },
       "isRequired": true
      },
      {
       "kind": "MappingFilter",
-      "name": "Group not Control",
-      "description": "Select the factor which defines the Test condition.",
+      "name": "Select Test conditions",
+      "description": "",
       "namedFilter": {
        "kind": "NamedFilter",
        "logical": "and",
@@ -2626,7 +2626,7 @@
         }
        ],
        "meta": [],
-       "name": "Group not Control"
+       "name": "Select Test conditions"
       },
       "isRequired": true
      }
@@ -2635,13 +2635,13 @@
   },
   {
    "kind": "InStep",
-   "id": "85ccdcb0-54b3-4f84-9bef-98f9db41d490",
+   "id": "eba6c9b8-f44d-4d6f-987e-c79b3efba46b",
    "groupId": "",
    "name": "Input",
    "inputs": [
     {
      "kind": "InputPort",
-     "id": "85ccdcb0-54b3-4f84-9bef-98f9db41d490-i-0",
+     "id": "eba6c9b8-f44d-4d6f-987e-c79b3efba46b-i-0",
      "linkType": "any",
      "name": "from"
     }
@@ -2649,7 +2649,7 @@
    "outputs": [
     {
      "kind": "OutputPort",
-     "id": "85ccdcb0-54b3-4f84-9bef-98f9db41d490-o-0",
+     "id": "eba6c9b8-f44d-4d6f-987e-c79b3efba46b-o-0",
      "linkType": "any",
      "name": "to"
     }
@@ -2663,8 +2663,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 633.505,
-     "y": -77.5
+     "x": 630.505,
+     "y": -81.5
     }
    },
    "state": {
@@ -2683,13 +2683,13 @@
   },
   {
    "kind": "OutStep",
-   "id": "90e45d88-3ae3-4785-956e-fc47a8dcc996",
+   "id": "2f56aa17-7876-453a-a5ec-b51f8cbb21e3",
    "groupId": "",
    "name": "Output",
    "inputs": [
     {
      "kind": "InputPort",
-     "id": "90e45d88-3ae3-4785-956e-fc47a8dcc996-i-0",
+     "id": "2f56aa17-7876-453a-a5ec-b51f8cbb21e3-i-0",
      "linkType": "any",
      "name": "from"
     }
@@ -2697,7 +2697,7 @@
    "outputs": [
     {
      "kind": "OutputPort",
-     "id": "90e45d88-3ae3-4785-956e-fc47a8dcc996-o-0",
+     "id": "2f56aa17-7876-453a-a5ec-b51f8cbb21e3-o-0",
      "linkType": "any",
      "name": "to"
     }
@@ -2711,8 +2711,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 763.1405416870119,
-     "y": 298.5
+     "x": 758.140541687012,
+     "y": 382.5
     }
    },
    "state": {
@@ -2732,8 +2732,8 @@
  ],
  "offset": {
   "kind": "Point",
-  "x": 55.0,
-  "y": 107.0
+  "x": 9.0,
+  "y": 158.0
  },
  "scale": 1.0
 }
