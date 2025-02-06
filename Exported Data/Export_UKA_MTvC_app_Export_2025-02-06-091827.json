@@ -1,10 +1,10 @@
 {
  "kind": "TableSchema",
- "id": "bee5f8e8d2c2bfa4bd51b895122e501cef2e9b75f0af62c9ccd9a415a794b70c",
+ "id": "05a9ae1272eff4d57de7d8e2df463a89c78d1a080b19454e950e698731c9dd6a",
  "isDeleted": false,
  "rev": "",
  "description": "",
- "name": "Export_UKA_MTvC_app_Export_2024-05-28-133209",
+ "name": "Export_UKA_MTvC_app_Export_2025-02-06-091827",
  "acl": {
   "kind": "Acl",
   "owner": "",
@@ -24,7 +24,7 @@
   {
    "kind": "Pair",
    "key": "SHA256",
-   "value": "bee5f8e8d2c2bfa4bd51b895122e501cef2e9b75f0af62c9ccd9a415a794b70c"
+   "value": "05a9ae1272eff4d57de7d8e2df463a89c78d1a080b19454e950e698731c9dd6a"
   }
  ],
  "url": {
@@ -35,11 +35,11 @@
  "isPublic": false,
  "projectId": "",
  "folderId": "3",
- "nRows": 174,
+ "nRows": 150,
  "columns": [
   {
    "kind": "ColumnSchema",
-   "id": "35e6a179-0026-474d-953a-4370ce9667dc",
+   "id": "739a7cc9-7186-4aa9-a8a7-844642046bb0",
    "name": "Group",
    "type": "string",
    "nRows": 0,
@@ -54,7 +54,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "e3b92093-6d33-46c0-91f2-075c1f7a3771",
+   "id": "4d6e6f3c-8247-440c-ae31-b1bfa2440861",
    "name": "UKA_MTvC.ds1.Kinase Name",
    "type": "string",
    "nRows": 0,
@@ -69,7 +69,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "ca90ec05-064a-4c92-b1b8-e7c714b9d1eb",
+   "id": "e40aa349-c47e-4114-96f0-929762c831b3",
    "name": "UKA_MTvC.ds1.Kinase Uniprot ID",
    "type": "string",
    "nRows": 0,
@@ -84,7 +84,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "64c3e500-51c7-4f27-b442-1ae5e8e7e210",
+   "id": "313bb119-9ed5-4f20-89b4-7b167e4aac48",
    "name": "UKA_MTvC.ds1.Kinase Group",
    "type": "string",
    "nRows": 0,
@@ -99,7 +99,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "3190a79c-fe41-498c-a9c6-4d0710c5fdc5",
+   "id": "b936b50c-e985-4633-a45c-7d5c061009a3",
    "name": "UKA_MTvC.ds1.Kinase Family",
    "type": "string",
    "nRows": 0,
@@ -114,7 +114,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "66103561-9dba-49ba-9a69-d1e988c6553d",
+   "id": "d27c8bca-a217-4cad-b047-eece986f0ab7",
    "name": "UKA_MTvC.ds1.Max Final score",
    "type": "double",
    "nRows": 0,
@@ -129,7 +129,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "c650d96b-8bf4-4fd8-9747-3868ea8a62fb",
+   "id": "9fe1519d-f137-432b-9236-cc451ccbd04d",
    "name": "UKA_MTvC.ds1.Mean Kinase Statistic",
    "type": "double",
    "nRows": 0,
@@ -144,7 +144,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "f01ef007-e97e-4658-8f9e-4f348c1b7b59",
+   "id": "2cfac2c3-5802-4f89-bfb0-99a8808c8e9b",
    "name": "UKA_MTvC.ds1.Mean Significance Score",
    "type": "double",
    "nRows": 0,
@@ -159,7 +159,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "6b3eded5-f0d2-4c65-ad6b-ca1cd67a1a42",
+   "id": "78d4c170-1c27-468f-826d-b84249441677",
    "name": "UKA_MTvC.ds1.Mean Specificity Score",
    "type": "double",
    "nRows": 0,
@@ -174,7 +174,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "c82e973a-e77a-4104-b36d-58111379aa76",
+   "id": "5d6d0514-06d5-483e-b23d-9f5a39c016f2",
    "name": "UKA_MTvC.ds1.Mean peptide set size",
    "type": "double",
    "nRows": 0,
@@ -189,7 +189,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "5979f7b9-5b2c-4c31-80aa-5e6598bffb8c",
+   "id": "f98fb5b4-fe33-4377-a974-b48377409295",
    "name": "UKA_MTvC.ds1.Median Final score",
    "type": "double",
    "nRows": 0,
@@ -204,7 +204,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "32a45172-d275-4bbf-b70b-ac524338f588",
+   "id": "65248d7a-c1f6-4511-84eb-ce872d9917d0",
    "name": "UKA_MTvC.ds1.Median Kinase Change",
    "type": "double",
    "nRows": 0,
@@ -219,7 +219,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "345f3cd1-d67e-43da-8a8b-6b0afdc1bcd6",
+   "id": "9b3303e0-5306-4537-a326-9a76693f6446",
    "name": "UKA_MTvC.ds1.Median Kinase Statistic",
    "type": "double",
    "nRows": 0,
@@ -234,7 +234,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "df7c2563-edd8-47d7-9a72-4b971f190ef8",
+   "id": "7e852c41-cf15-425c-9905-2a59f2d892e8",
    "name": "UKA_MTvC.ds1.SD Kinase Statitistic",
    "type": "double",
    "nRows": 0,
@@ -248,9 +248,9 @@
    }
   }
  ],
- "dataDirectory": "data/be/e5/bee5f8e8d2c2bfa4bd51b895122e501cef2e9b75f0af62c9ccd9a415a794b70c",
+ "dataDirectory": "data/05/a9/05a9ae1272eff4d57de7d8e2df463a89c78d1a080b19454e950e698731c9dd6a",
  "relation": {
   "kind": "Relation",
-  "id": "e5cee608-e655-407d-bc35-4759c3b701bf"
+  "id": "ab3b16d4-17d2-418e-b74d-2734fbd4ff7b"
  }
 }
